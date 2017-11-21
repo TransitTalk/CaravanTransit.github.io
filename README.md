@@ -1,2 +1,2 @@
-# Transit Network Group Website
-A homepage for Transit Network on the web, explaining what Transit Network is for and how to set it up.
+# Caravan Transit Website
+A homepage for Caravan on the web, explaining what the Caravan App is for and how to set it up.
