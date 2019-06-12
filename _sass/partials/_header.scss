@@ -2,6 +2,15 @@ header {
     padding: 15px;
     background-color: $grey;
     border-bottom: solid $blue 8px;
+    // Use box-shadow and margin to fake a second border
+    box-shadow: 0px 0px 0px 8px $purple;
+    margin-bottom: 8px + 30px;
+
+    // Make title and nav links black with no underline
+    a {
+        color: $black;
+        text-decoration: none;
+    }
 
     .header-inner {
         @extend %content-width;
@@ -26,9 +35,5 @@ header {
         margin: 0;
 
         li { margin: 0 10px; }
-        a {
-            color: $black;
-            text-decoration: none;
-        }
     }
 }
