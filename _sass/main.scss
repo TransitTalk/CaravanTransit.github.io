@@ -1,5 +1,33 @@
+/**
+ * External Resouves
+ */
+// Google Fonts - Roboto
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+/**
+ * Variables
+ */
+@import 'variables/colors';
+@import 'variables/spacing';
+
+/**
+ * Placeholder Classes
+ */
+@import 'placeholders/content-placeholders';
+
+
+/**
+ * Partials
+ */
+@import 'partials/footer';
+@import 'partials/header';
+
 body {
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.page-content {
+    @extend %content-width;
 }

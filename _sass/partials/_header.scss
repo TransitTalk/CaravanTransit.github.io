@@ -1,0 +1,6 @@
+header {
+    padding: 15px;
+    background-color: $grey;
+
+    .header-inner { @extend %content-width; }
+}
