@@ -1,0 +1,39 @@
+header {
+    padding: 15px;
+    background-color: $grey;
+    border-bottom: solid $blue 8px;
+    // Use box-shadow and margin to fake a second border
+    box-shadow: 0px 0px 0px 8px $purple;
+    margin-bottom: 8px + 30px;
+
+    // Make title and nav links black with no underline
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+
+    .header-inner {
+        @extend %content-width;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 2rem;
+
+        img {
+            width: 60px;
+            margin-right: 20px;
+        }
+    }
+    ul.nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+
+        li { margin: 0 10px; }
+    }
+}

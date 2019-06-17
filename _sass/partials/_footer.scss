@@ -1,0 +1,10 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: $grey;
+
+    .footer-inner { @extend %content-width; }
+}
