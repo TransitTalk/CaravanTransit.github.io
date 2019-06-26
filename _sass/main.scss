@@ -42,7 +42,61 @@ body {
     @extend %content-width;
 }
 .section-1 {
-  background-image: url("/assets/images/partition-left.png");
-  background-size: 940px;
+  height: 387px;
+}
+.bkgd-1 {
+  background-image: url(/assets/images/partition-left.png);
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 130%;
+  margin-left: -230px;
+  .h1-left {
+    display: inline-block;
+    width: 280px;
+    text-align: center;
+    transform: translate(140px, 140px);
+  }
+  .center-btn {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    transform: translate(-30px, 40px);
+    .img-container {
+      height: 130px;
+    }
+  }
+  .p-right {
+    display: inline-block;
+    height: 100px;
+    float: right;
+    width: 330px;
+    transform: translate(-120px, -90px);
+  }
+}
+.three-buttons {
+  height: 350px;
+  .h1-right {
+    display: inline-block;
+    width: 280px;
+    float: right;
+    text-align: center;
+    transform: translate(-130px, -30px);
+  }
+  .p-left {
+    display: inline-block;
+    height: 100px;
+    float: left;
+    width: 330px;
+    transform: translate(10px, -50px);
+  }
+}
+.section-2 {
+  height: 350px;
+}
+.bkgd-2 {
+  background-image: url(/assets/images/partition-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 130%;
+  margin-right: -230px
 }
