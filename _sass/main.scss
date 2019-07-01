@@ -176,6 +176,13 @@ a.button {
     text-align: center;
     transform: translate(140px, 80px);
   }
+  .p-left {
+    display: inline-block;
+    height: 100px;
+    float: left;
+    width: 330px;
+    margin: 100px 0px 0px 130px;
+  }
   .p-right {
     display: inline-block;
     height: 100px;
@@ -231,6 +238,13 @@ a.button {
   //   margin-left: auto;
   //   margin-right: auto;
   // }
+  .p-center {
+    width: 121%;
+    text-align: center;
+    margin: auto;
+    font-size: 27px;
+    padding: 50px 0px 100px 0px;
+  }
   .btn-github {
     width: 240px;
     margin-top: 30px;
