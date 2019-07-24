@@ -96,9 +96,15 @@ a.button {
   .homepage-p-right {
     display: inline-block;
     height: 100px;
-    float: right;
     width: 330px;
+    float: right;
     margin: -100px 90px 0px 0px;
+  }
+  .homepage-p-center {
+    display: inline-block;
+    height: 100px;
+    width: 470px;
+    margin: 70px 0px 0px 510px;
   }
   .tool-p-right {
     display: inline-block;
