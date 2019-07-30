@@ -1,10 +1,12 @@
+$header-line-size: 8px;
+
 header {
     padding: 15px;
     background-color: $grey;
-    border-bottom: solid $blue 8px;
+    border-bottom: solid $blue $header-line-size;
     // Use box-shadow and margin to fake a second border
-    box-shadow: 0px 0px 0px 8px $purple;
-    margin-bottom: 8px + 30px;
+    box-shadow: 0px 0px 0px $header-line-size $purple;
+    margin-bottom: $header-line-size + 30px;
 
     // Make title and nav links black with no underline
     a {
@@ -12,6 +14,18 @@ header {
         text-decoration: none;
     }
 
+    .menu-btn {
+        display: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: $white;
+
+        &:hover, &:focus { background-color: $dark-white; }
+        img { width: 100%; }
+    }
     .header-inner {
         @extend %content-width;
         display: flex;
@@ -35,5 +49,36 @@ header {
         margin: 0;
 
         li { margin: 0 10px; }
+    }
+}
+
+// Mobile styling
+@media (max-width: 800px) {
+    main { padding: 0px 15px; }
+    header {
+        position: relative;
+
+        &:not(.-open) .nav-links { height: 0px; }
+        &.-open .nav-links { height: 220px; }
+
+        .header-inner { align-items: center; }
+        .menu-btn { display: block; }
+        ul.nav-links {
+            position: absolute;
+            flex-direction: column;
+            transition: height 0.4s;
+            overflow: hidden;
+            width: 100%;
+            // Make top value 100% (header height) + 2 lines
+            top: calc(100% + #{$header-line-size * 2});
+            left: 0;
+            background-color: $grey;
+            box-sizing: border-box;
+            padding: 0px 10px;
+
+            li { margin: 10px 0; }
+            li:first-of-type { margin-top: 20px; }
+            li:last-of-type { margin-bottom: 20px; }
+        }
     }
 }
