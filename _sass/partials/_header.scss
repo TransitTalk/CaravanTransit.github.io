@@ -1,7 +1,7 @@
 $header-line-size: 8px;
 
 header {
-    padding: 15px;
+    padding: 5px 15px 5px 15px;
     background-color: $grey;
     border-bottom: solid $blue $header-line-size;
     // Use box-shadow and margin to fake a second border
@@ -47,8 +47,13 @@ header {
         list-style: none;
         display: flex;
         margin: 0;
-
-        li { margin: 0 10px; }
+        li { 
+          margin: -21px 10px; 
+          &:hover {
+            border-bottom: 17px solid white;
+            
+          }
+        }
     }
 }
 

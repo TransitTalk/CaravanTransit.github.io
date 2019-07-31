@@ -21,7 +21,6 @@
 @import 'partials/footer';
 @import 'partials/header';
 
-
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -29,12 +28,209 @@ body {
     margin: 0;
 }
 
-// Customize focus
+.btn {
+  height: 50px;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #464646;
+  border-radius: 9px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn:hover { 
+    background-color: #888888;
+}
+
+a.button {
+ text-decoration: none;
+}
+
+.hero-banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+  }
+  h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 56px;
+    text-align: center;
+  }
+}
+
+.page-content {
+    @extend %content-width;
+}
+.section-1 {
+  height: 387px;
+  .h1-left {
+    display: inline-block;
+    width: 280px;
+    text-align: center;
+    transform: translate(190px, 120px);
+  }
+  .center-btn {
+    .btn-learn {
+      width: 170px;
+      margin-top: 60px;
+      padding: 0px 0px 0px 24px;
+    }
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    .img-container {
+      height: 130px;
+    }
+  }
+  .homepage-p-right {
+    display: inline-block;
+    height: 100px;
+    width: 330px;
+    float: right;
+    margin: -100px 90px 0px 0px;
+  }
+  .homepage-p-center {
+    display: inline-block;
+    height: 100px;
+    width: 560px;
+    margin: 70px 0px 0px 480px;
+    p {font-size: 20px;}
+  }
+  .tool-p-right {
+    display: inline-block;
+    height: 100px;
+    float: right;
+    width: 330px;
+    margin: 120px 160px 0px 0px
+  }
+}
+.bkgd-1 {
+  background-image: url(/assets/images/mobile-partition-left.png);
+  @media (min-width: 501px) {
+    background-image: url(/assets/images/partition-left.png);
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 130%;
+  margin-left: -230px;
+  
+}
+
+.three-buttons {
+  .features-img {
+    height: 170px;
+    margin: -80px 0px 0px 120px;
+  }
+}
+.section-2 {
+  height: 240px;
+  .h1-right {
+    display: inline-block;
+    width: 280px;
+    float: right;
+    text-align: center;
+    margin: 30px 100px 0px 0px;
+  }
+  .center-text {
+    width: 51%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding: 30px 0px 50px 0px;
+  }
+  .p-left {
+    display: inline-block;
+    height: 100px;
+    float: left;
+    width: 330px;
+    margin: 60px 0px 0px 60px;
+  }
+
+  .btn-mission {
+    width: 170px;
+    margin-top: 30px;
+    padding: 0px 0px 0px 32px;
+  }
+}
+.section-3 {
+  height: 350px;
+  .h1-left {
+    display: inline-block;
+    width: 280px;
+    text-align: center;
+    transform: translate(140px, 80px);
+  }
+  .p-left {
+    display: inline-block;
+    height: 100px;
+    float: left;
+    width: 330px;
+    margin: 100px 0px 0px 130px;
+  }
+  .p-right {
+    display: inline-block;
+    height: 100px;
+    float: right;
+    width: 330px;
+    margin: 100px 300px 0px 0px;
+  }
+  .center-text {
+    width: 31%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    padding: 110px 310px 50px 0px;
+  }
+  .btn-team {
+    width: 170px;
+    margin-top: 30px;
+    padding: 0px 0px 0px 40px;
+  }
+}
+
+.bkgd-2 {
+  background-image: url(/assets/images/mobile-partition-right.png);
+  @media (min-width: 501px) {
+    background-image: url(/assets/images/partition-right.png);
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 130%;
+  margin-right: -230px;
+}
+.section-4 {
+  height: 260px;
+  text-align: center;
+  width: 440px;
+  margin: auto;
+
+  .p-center {
+    width: 121%;
+    text-align: center;
+    margin: auto;
+    font-size: 27px;
+    padding: 50px 0px 100px 0px;
+  }
+}
+.btn-github {
+    width: 240px;
+    margin-top: 30px;
+    padding: 0px 0px 0px 37px;
+  }
+
 *:focus {
     outline: none;
     box-shadow: 0px 0px 0px 3px $orange;
 }
-
-// Make page content restricted width
-.page-content { @extend %content-width; }
 
