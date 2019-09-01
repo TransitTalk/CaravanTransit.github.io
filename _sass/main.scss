@@ -55,19 +55,22 @@ a.button {
 .logo-large { height: 130px; }
 .logo-med { height: 90px; }
 
+.mobile-img {
+  height: 260px;
+  margin: 0 100px;
+}
+
 .hero-banner {
   padding-top: 30px;
   padding-bottom: 30px;
 
   h1 {
-    font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 48px;
     text-align: center;
   }
   h2 {
-    font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 38px;
     text-align: center;
   }

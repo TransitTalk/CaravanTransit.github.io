@@ -10,7 +10,8 @@
         justify-content: space-evenly;
     }
 
-    > * { flex: 1; }
+
+    > *:not(.no-grow) { flex: 1; }
 
     @media (max-width: $mobile-max-width) {
         flex-direction: column;
@@ -34,6 +35,14 @@
  * Center Text - A basic class to center text
  */
 .center-text { text-align: center; }
+
+/**
+ * Basic Paragraph - A paragraph with a reasonable max-width and centering
+ */
+.basic-p {
+    max-width: 400px;
+    margin: auto;
+}
 
 /**
  * Desktop Only -  A class for elements that should only show up on desktop
