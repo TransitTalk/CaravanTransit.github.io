@@ -1,4 +1,12 @@
 ---
 ---
 
+/**
+ * This main file is the only SCSS file that is actually compiled down to CSS,
+ * and is creates the final output styles.css that is loaded in the browser.
+ *
+ * DO NOT add anything to this file - add it to one of the SCSS files in /_sass,
+ * and add new SCSS files to main.scss so it gets loaded globally.
+ */
+
 @import 'main';
