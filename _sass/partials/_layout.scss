@@ -2,35 +2,34 @@
  * Simple Columns Class - Useful for any basic horizontal columns
  */
 .simple-cols {
-    display: flex;
+  display: flex;
 
-    &.-standard {
-        padding: 120px 60px;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+  &.-standard {
+    padding: 120px 60px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
-    &.-vertical { flex-direction: column; }
+  &.-vertical { flex-direction: column; }
 
+  > *:not(.no-grow) { flex: 1; }
 
-    > *:not(.no-grow) { flex: 1; }
-
-    @media (max-width: $mobile-max-width) {
-        flex-direction: column;
-    }
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+  }
 }
 
 /**
  * Vertical Columns - A simple class for vertical columns
  */
 .vertical-cols {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    &.-center {
-        align-items: center;
-        text-align: center;
-    }
+  &.-center {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /**
@@ -42,13 +41,13 @@
  * Basic Paragraph - A paragraph with a reasonable max-width and centering
  */
 .basic-p {
-    max-width: 400px;
-    margin: auto;
+  max-width: 400px;
+  margin: auto;
 }
 
 .hero-p {
-    max-width: 600px;
-    font-size: 20px;
+  max-width: 600px;
+  font-size: 20px;
 }
 
 /**
@@ -56,7 +55,7 @@
  * devices.
  */
 .dsktp-only {
-    @media (max-width: $mobile-max-width) {
-        display: none;
-    }
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
 }
