@@ -30,6 +30,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   text-align: center;
   text-decoration: none;
   padding: 10px 20px;
@@ -38,6 +39,10 @@ body {
   font-size: 24px;
   border-radius: 9px;
   margin: 0 auto;
+
+  &.-spaced-top {
+    margin-top: 30px;
+  }
 }
 .btn:hover {
     background-color: #888888;
@@ -71,30 +76,7 @@ a.button {
 .page-content {
     @extend %content-width;
 }
-.section-1 {
-  .h1-left {
-    display: inline-block;
-    text-align: center;
-  }
-  .center-btn {
-    .btn-learn {
-      margin-top: 60px;
-    }
-    margin: 0 auto;
-    text-align: center;
-  }
-  .homepage-p-right {
-    display: inline-block;
-  }
-  .homepage-p-center {
-    display: inline-block;
 
-    p {font-size: 20px;}
-  }
-  .tool-p-right {
-    display: inline-block;
-  }
-}
 .bkgd-1 {
   background-image: url(/assets/images/mobile-partition-left.png);
   background-size: cover;
@@ -113,46 +95,6 @@ a.button {
 
   .features-img {
     height: 170px;
-  }
-}
-.section-2 {
-  .h1-right {
-    display: inline-block;
-    text-align: center;
-  }
-  .center-text {
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
-    padding: 30px 0px 50px 0px;
-  }
-  .p-left {
-    display: inline-block;
-  }
-
-  .btn-mission {
-    margin-top: 30px;
-  }
-}
-.section-3 {
-  .h1-left {
-    display: inline-block;
-    text-align: center;
-  }
-  .p-left {
-    display: inline-block;
-  }
-  .p-right {
-    display: inline-block;
-  }
-  .center-text {
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
-    padding: 110px 310px 50px 0px;
-  }
-  .btn-team {
-    margin-top: 30px;
   }
 }
 
