@@ -86,7 +86,7 @@ a.button {
   background-repeat: no-repeat;
   margin-left: 0px;
 
-  @media (min-width: 501px) {
+  @media (min-width: $desktop-min-width) {
     background-image: url(/assets/images/partition-left.png);
   }
 }
@@ -103,12 +103,13 @@ a.button {
 
 .bkgd-2 {
   background-image: url(/assets/images/mobile-partition-right.png);
-  @media (min-width: 501px) {
-    background-image: url(/assets/images/partition-right.png);
-  }
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 0px;
+
+  @media (min-width: $desktop-min-width) {
+    background-image: url(/assets/images/partition-right.png);
+  }
 }
 
 

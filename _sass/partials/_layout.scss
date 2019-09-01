@@ -10,6 +10,8 @@
         justify-content: space-evenly;
     }
 
+    &.-vertical { flex-direction: column; }
+
 
     > *:not(.no-grow) { flex: 1; }
 
@@ -42,6 +44,11 @@
 .basic-p {
     max-width: 400px;
     margin: auto;
+}
+
+.hero-p {
+    max-width: 600px;
+    font-size: 20px;
 }
 
 /**
