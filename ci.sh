@@ -11,3 +11,7 @@ jekyll build
 #
 # Learn more: https://github.com/gjtorikian/html-proofer#configuration
 htmlproofer ./_site --assume-extension --check-html --enforce_https
+
+# Run stylelint on the `/_sass` directory with root files (main.scss) first,
+# then sub files like partials
+stylelint _sass/*.scss _sass/*/*.scss

@@ -5,7 +5,9 @@ language: ruby
 rvm:
   - 2.4.4
 
-install: bundle install # Install needed gems
+install:
+  - bundle install # Install needed gems
+  - npm install # Install stylelint
 script: ./ci.sh # Run continuous integration shell script
 
 env:
