@@ -1,0 +1,42 @@
+/**
+ * Simple Columns Class - Useful for any basic horizontal columns
+ */
+.simple-cols {
+    display: flex;
+
+    &.-standard {
+        padding: 120px 60px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    > * { flex: 1; }
+
+    @media (max-width: $mobile-max-width) {
+        flex-direction: column;
+    }
+}
+
+/**
+ * Vertical Columns - A simple class for vertical columns
+ */
+.vertical-cols {
+    display: flex;
+    flex-direction: column;
+
+    &.-center {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/**
+ * Desktop Only -  A class for elements that should only show up on desktop
+ * devices.
+ */
+.dsktp-only {
+    @media (max-width: $mobile-max-width) {
+        display: none;
+    }
+}
