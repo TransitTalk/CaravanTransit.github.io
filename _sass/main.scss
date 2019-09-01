@@ -18,9 +18,15 @@
 /**
  * Partials
  */
+@import 'partials/backgrounds';
 @import 'partials/footer';
 @import 'partials/header';
 @import 'partials/layout';
+
+/**
+ * Pages
+ */
+@import 'pages/index';
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -28,6 +34,16 @@ body {
     padding: 0;
     margin: 0;
 }
+
+// Override focus styles to be more branded and prominent
+*:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 3px $orange;
+}
+
+// Make .page-content extend content-width
+.page-content { @extend %content-width; }
+
 
 .btn {
   display: inline-block;
@@ -46,10 +62,6 @@ body {
 }
 .btn:hover {
     background-color: #888888;
-}
-
-a.button {
- text-decoration: none;
 }
 
 .logo-large { height: 130px; }
@@ -75,50 +87,3 @@ a.button {
     text-align: center;
   }
 }
-
-.page-content {
-    @extend %content-width;
-}
-
-.bkgd-1 {
-  background-image: url(/assets/images/mobile-partition-left.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: 0px;
-
-  @media (min-width: $desktop-min-width) {
-    background-image: url(/assets/images/partition-left.png);
-  }
-}
-
-.three-buttons {
-  position: relative;
-  top: -80px;
-  text-align: center;
-
-  .features-img {
-    height: 170px;
-  }
-}
-
-.bkgd-2 {
-  background-image: url(/assets/images/mobile-partition-right.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 0px;
-
-  @media (min-width: $desktop-min-width) {
-    background-image: url(/assets/images/partition-right.png);
-  }
-}
-
-
-.btn-github {
-    margin-top: 30px;
-}
-
-*:focus {
-    outline: none;
-    box-shadow: 0px 0px 0px 3px $orange;
-}
-

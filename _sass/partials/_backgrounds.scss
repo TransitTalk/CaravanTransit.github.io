@@ -1,0 +1,20 @@
+[class^="bkgd"] {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bkgd-1 {
+  background-image: url(/assets/images/mobile-partition-left.png);
+
+  @media (min-width: $desktop-min-width) {
+    background-image: url(/assets/images/partition-left.png);
+  }
+}
+
+.bkgd-2 {
+  background-image: url(/assets/images/mobile-partition-right.png);
+
+  @media (min-width: $desktop-min-width) {
+    background-image: url(/assets/images/partition-right.png);
+  }
+}
