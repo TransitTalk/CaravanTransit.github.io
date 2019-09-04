@@ -17,4 +17,5 @@ env:
 # Cache gems
 cache: bundler
 
-sudo: false # route your build to the container-based infrastructure for a faster build
+# route your build to the container-based infrastructure for a faster build
+sudo: false
