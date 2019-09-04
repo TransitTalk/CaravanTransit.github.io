@@ -1,0 +1,15 @@
+.three-btn-cont {
+  position: relative;
+  margin-bottom: 40px;
+
+  .three-buttons {
+    position: absolute;
+    top: calc(100% - 80px);
+    width: 100%;
+    text-align: center;
+
+    .features-img {
+      height: 170px;
+    }
+  }
+}

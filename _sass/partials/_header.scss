@@ -47,19 +47,13 @@ header {
         list-style: none;
         display: flex;
         margin: 0;
-        li { 
-          margin: -21px 10px; 
-          &:hover {
-            border-bottom: 17px solid white;
-            
-          }
-        }
+
+        li { margin: 0px 10px; }
     }
 }
 
 // Mobile styling
 @media (max-width: 800px) {
-    main { padding: 0px 15px; }
     header {
         position: relative;
 
