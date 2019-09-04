@@ -7,7 +7,7 @@ rvm:
 
 install:
   - bundle install # Install needed gems
-  - npm install # Install stylelint
+  - npm install -g stylelint postcss # Install stylelint
 script: ./ci.sh # Run continuous integration shell script
 
 env:
