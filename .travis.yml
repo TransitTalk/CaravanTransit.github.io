@@ -7,7 +7,8 @@ rvm:
 
 install:
   - bundle install # Install needed gems
-  - npm install # Install stylelint
+  - npm install -g stylelint postcss # Install stylelint
+  - npm install # Install other stylelint requirements
 script: ./ci.sh # Run continuous integration shell script
 
 env:
@@ -17,4 +18,5 @@ env:
 # Cache gems
 cache: bundler
 
-sudo: false # route your build to the container-based infrastructure for a faster build
+# route your build to the container-based infrastructure for a faster build
+sudo: false
