@@ -1,4 +1,4 @@
-# Transit Talk
+# Transit Talk [![Build Status](https://travis-ci.org/TransitTalk/TransitTalk.github.io.svg?branch=master)](https://travis-ci.org/TransitTalk/TransitTalk.github.io)
 
 A homepage for Transit Talk on the web, explaining what the app is for and how to set it up.
 
