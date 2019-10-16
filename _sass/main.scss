@@ -53,6 +53,8 @@ a.button {
 .hero-banner {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-bottom: 6px;
+  border-bottom: 10px solid #1BA4E3;
   h1 {
     font-style: normal;
     font-weight: 500;
@@ -72,8 +74,14 @@ a.button {
 .page-content {
     @extend %content-width;
 }
+  
 .section-1 {
-  height: 387px;
+  background: linear-gradient(292.39deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
+  border-top: 10px solid #FEF035;
+  border-bottom: 10px solid #F18DB9;
+  margin-bottom: 6px;
+
+
   .h1-left {
     display: inline-block;
     width: 280px;
@@ -115,25 +123,17 @@ a.button {
     margin: 120px 160px 0px 0px
   }
 }
-.bkgd-1 {
-  background-image: url(/assets/images/mobile-partition-left.png);
-  @media (min-width: 501px) {
-    background-image: url(/assets/images/partition-left.png);
-  }
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 130%;
-  margin-left: -230px;
-  
-}
 
 .three-buttons {
+  border-top: 10px solid #493390;
   .features-img {
     height: 170px;
     margin: -80px 0px 0px 120px;
   }
 }
 .section-2 {
+  border-bottom: 10px solid #F59331;
+  margin-bottom: 6px;
   height: 240px;
   .h1-right {
     display: inline-block;
@@ -164,6 +164,9 @@ a.button {
   }
 }
 .section-3 {
+  border-top: 10px solid #16A050;
+  border-bottom: 10px solid #DE1D41;
+  margin-bottom: 6px;
   height: 350px;
   .h1-left {
     display: inline-block;
@@ -199,20 +202,10 @@ a.button {
   }
 }
 
-.bkgd-2 {
-  background-image: url(/assets/images/mobile-partition-right.png);
-  @media (min-width: 501px) {
-    background-image: url(/assets/images/partition-right.png);
-  }
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 130%;
-  margin-right: -230px;
-}
 .section-4 {
+  border-top: 10px solid #1BA4E3;
   height: 260px;
   text-align: center;
-  width: 440px;
   margin: auto;
 
   .p-center {
