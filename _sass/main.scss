@@ -88,14 +88,19 @@ a.button {
   background: linear-gradient(292.39deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
   border-top: 10px solid #FEF035;
   border-bottom: 10px solid #F18DB9;
+  border-left: 10px solid #F59331;
+  border-right: 10px solid #F59331;
   margin-bottom: 6px;
-
-
   .h1-left {
-    padding: 100px 0px;
     display: inline-block;
     text-align: center;
     width:40%;
+    h1 {
+      padding-top:80px;
+    }
+    img {
+      height: 300px;
+    }
   }
   .center-btn {
     .btn-learn {
@@ -108,7 +113,7 @@ a.button {
     text-align: center;
     .img-container {
       height: 130px;
-      padding-top: 30px;
+      padding-top: 10px;
     }
   }
   .homepage-p-right {
@@ -133,8 +138,12 @@ a.button {
     display: inline-block;
     height: 100px;
     float: right;
-    width: 330px;
-    margin: 120px 160px 0px 0px
+    width: 50%;
+    p {
+      width: 60%;
+      margin: auto;
+      padding-top: 90px;
+    }
   }
 }
 
@@ -158,11 +167,14 @@ a.button {
     text-align: center;
   }
   .center-text {
-    width: 51%;
+    width: 100%;
     text-align: center;
     margin: auto;
     font-size: 20px;
-    padding: 30px 0px 50px 0px;
+    p {
+      width: 40%;
+      margin: auto;
+    }
   }
   .p-left {
     display: inline-block;
@@ -187,8 +199,10 @@ a.button {
   background: linear-gradient(292.39deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
   border-top: 10px solid #16A050;
   border-bottom: 10px solid #DE1D41;
+  border-left: 10px solid #F18DB9;
+  border-right: 10px solid #F18DB9;
   margin-bottom: 6px;
-  height: 350px;
+  height: 300px;
   .h1-left {
     display: inline-block;
     width: 50%;
