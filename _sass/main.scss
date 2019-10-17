@@ -30,20 +30,28 @@ body {
 
 .btn {
   height: 50px;
-  color: #FFFFFF;
   font-size: 24px;
   line-height: 28px;
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: #464646;
+  ;
   border-radius: 9px;
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
 .btn:hover { 
-    background-color: #888888;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn-primary {
+  background-color: #464646;
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  color: #464646;
+  border: 3px solid #464646;
 }
 
 a.button {
@@ -139,15 +147,15 @@ a.button {
   }
 }
 .section-2 {
+  display: flex;
   border-bottom: 10px solid #F59331;
   margin-bottom: 6px;
   height: 240px;
   .h1-right {
     display: inline-block;
-    width: 280px;
+    width: 50%;
     float: right;
     text-align: center;
-    margin: 30px 100px 0px 0px;
   }
   .center-text {
     width: 51%;
@@ -160,8 +168,12 @@ a.button {
     display: inline-block;
     height: 100px;
     float: left;
-    width: 330px;
-    margin: 60px 0px 0px 60px;
+    width: 50%;
+    p {
+      width: 60%;
+      margin: auto;
+      margin-top: 40px;
+    }
   }
 
   .btn-mission {
@@ -171,6 +183,7 @@ a.button {
   }
 }
 .section-3 {
+  display: flex;
   background: linear-gradient(292.39deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
   border-top: 10px solid #16A050;
   border-bottom: 10px solid #DE1D41;
@@ -178,23 +191,26 @@ a.button {
   height: 350px;
   .h1-left {
     display: inline-block;
-    width: 280px;
+    width: 50%;
+    padding-top: 60px;
     text-align: center;
-    transform: translate(140px, 80px);
   }
   .p-left {
     display: inline-block;
     height: 100px;
     float: left;
-    width: 330px;
-    margin: 100px 0px 0px 130px;
+    width: 50%;
   }
   .p-right {
     display: inline-block;
     height: 100px;
     float: right;
-    width: 330px;
-    margin: 100px 300px 0px 0px;
+    width: 50%;
+    padding-top: 100px;
+    p {
+      width: 60%;
+      margin: auto;
+    }
   }
   .center-text {
     width: 31%;
@@ -215,6 +231,11 @@ a.button {
   height: 260px;
   text-align: center;
   margin: auto;
+  p {    
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+  }
 
   .p-center {
     width: 121%;
