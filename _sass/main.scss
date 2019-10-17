@@ -214,16 +214,26 @@ a.button {
     height: 100px;
     float: left;
     width: 50%;
+    p {
+      width: 60%;
+      margin: auto;
+      padding-top: 100px;
+    }
   }
   .p-right {
     display: inline-block;
     height: 100px;
     float: right;
     width: 50%;
-    padding-top: 100px;
     p {
+      padding-top: 100px;
       width: 60%;
       margin: auto;
+    }
+    img {
+      height: 320px;
+      margin-left: 90px;
+      margin-top: -7px;
     }
   }
   .center-text {
@@ -252,10 +262,9 @@ a.button {
   }
 
   .p-center {
-    width: 121%;
     text-align: center;
     margin: auto;
-    font-size: 27px;
+    font-size: 20px;
     padding: 50px 0px 100px 0px;
   }
 }
