@@ -64,11 +64,15 @@ a.button {
   margin-bottom: 6px;
   border-bottom: 10px solid #1BA4E3;
   h1 {
+    font-size: 38px;
+    line-height: 46px;
     font-style: normal;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 56px;
     text-align: center;
+    @media only screen and (min-width: 600px) {
+      font-size: 48px;
+      line-height: 56px;
+    } 
   }
   h2 {
     font-style: normal;
@@ -84,7 +88,10 @@ a.button {
 }
   
 .section-1 {
-  display: flex;
+  display: flow-root;
+  @media only screen and (min-width: 600px) {
+    display: flex;
+  }
   background: linear-gradient(292.39deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
   border-top: 10px solid #FEF035;
   border-bottom: 10px solid #F18DB9;
@@ -94,9 +101,14 @@ a.button {
   .h1-left {
     display: inline-block;
     text-align: center;
-    width:40%;
+    width:100%;
+    @media only screen and (min-width: 600px){
+      width:40%;
+    }
     h1 {
-      padding-top:80px;
+      @media only screen and (min-width: 600px) {
+        padding-top:80px;
+      }
     }
     img {
       height: 300px;
@@ -114,6 +126,13 @@ a.button {
     .img-container {
       height: 130px;
       padding-top: 10px;
+      img {
+        margin-bottom: -53px; 
+        height: 80px;
+        @media only screen and (min-width: 600px) {
+          height: 130px;
+        }
+      }
     }
   }
   .homepage-p-right {
@@ -164,7 +183,10 @@ a.button {
   border-top: 10px solid #493390;
   text-align: center;
   .features-img {
-    height: 170px;
+    height: 90px;
+    @media only screen and (min-width: 600px) {
+      height: 170px;
+    }
     margin-top: -70px;
   }
 }
