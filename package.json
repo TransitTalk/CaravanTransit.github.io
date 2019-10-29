@@ -1,0 +1,27 @@
+{
+  "name": "transittalk.github.io",
+  "version": "1.0.0",
+  "description": "TransitTalk marketing site powered by Jekyll",
+  "main": "index.js",
+  "dependencies": {
+    "postcss": "^7.0.17"
+  },
+  "devDependencies": {
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-scss": "^3.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TransitTalk/TransitTalk.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TransitTalk/TransitTalk.github.io/issues"
+  },
+  "homepage": "https://github.com/TransitTalk/TransitTalk.github.io#readme"
+}

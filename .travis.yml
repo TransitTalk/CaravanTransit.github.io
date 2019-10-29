@@ -1,0 +1,22 @@
+# Travis configuration file
+# Some configuration copied from Jekyll Continuous Integration Guide
+# See https://jekyllrb.com/docs/continuous-integration/travis-ci/
+language: ruby
+rvm:
+  - 2.4.4
+
+install:
+  - bundle install # Install needed gems
+  - npm install -g stylelint postcss # Install stylelint
+  - npm install # Install other stylelint requirements
+script: ./ci.sh # Run continuous integration shell script
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+# Cache gems
+cache: bundler
+
+# route your build to the container-based infrastructure for a faster build
+sudo: false

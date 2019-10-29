@@ -1,5 +1,5 @@
 /**
- * External Resouves
+ * External Resources
  */
 // Google Fonts - Roboto
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -18,15 +18,31 @@
 /**
  * Partials
  */
+@import 'partials/backgrounds';
 @import 'partials/footer';
 @import 'partials/header';
+@import 'partials/layout';
+
+/**
+ * Pages
+ */
+@import 'pages/index';
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
+
+// Override focus styles to be more branded and prominent
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px $orange;
+}
+
+// Make .page-content extend content-width
+.page-content { @extend %content-width; }
 
 .btn {
   height: 50px;
@@ -54,8 +70,14 @@ body {
   border: 3px solid #464646;
 }
 
-a.button {
- text-decoration: none;
+.btn:hover { background-color: #888; }
+
+.logo-large { height: 130px; }
+.logo-med { height: 90px; }
+
+.mobile-img {
+  height: 260px;
+  margin: 0 100px;
 }
 
 .hero-banner {
@@ -63,16 +85,15 @@ a.button {
   padding-bottom: 30px;
   margin-bottom: 6px;
   border-bottom: 10px solid #1BA4E3;
+
   h1 {
-    font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 48px;
-    line-height: 56px;
     text-align: center;
   }
+
   h2 {
-    font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 38px;
     line-height: 56px;
     text-align: center;
@@ -205,6 +226,7 @@ a.button {
     width: 170px;
     margin-top: 30px;
     padding: 0px 0px 0px 32px;
+
   }
   .btn-div {
     width: 100%;
@@ -292,4 +314,3 @@ a.button {
     outline: none;
     box-shadow: 0px 0px 0px 3px $orange;
 }
-

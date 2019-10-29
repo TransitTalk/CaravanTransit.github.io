@@ -1,0 +1,61 @@
+/**
+ * Simple Columns Class - Useful for any basic horizontal columns
+ */
+.simple-cols {
+  display: flex;
+
+  &.-standard {
+    padding: 120px 60px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &.-vertical { flex-direction: column; }
+
+  > *:not(.no-grow) { flex: 1; }
+
+  @media (max-width: $mobile-max-width) {
+    flex-direction: column;
+  }
+}
+
+/**
+ * Vertical Columns - A simple class for vertical columns
+ */
+.vertical-cols {
+  display: flex;
+  flex-direction: column;
+
+  &.-center {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/**
+ * Center Text - A basic class to center text
+ */
+.center-text { text-align: center; }
+
+/**
+ * Basic Paragraph - A paragraph with a reasonable max-width and centering
+ */
+.basic-p {
+  max-width: 400px;
+  margin: auto;
+}
+
+.hero-p {
+  max-width: 600px;
+  font-size: 20px;
+}
+
+/**
+ * Desktop Only -  A class for elements that should only show up on desktop
+ * devices.
+ */
+.dsktp-only {
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
