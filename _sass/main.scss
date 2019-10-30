@@ -58,7 +58,7 @@ body {
   margin-right: auto;
 }
 .btn:hover { 
-    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btn-primary {
   background-color: #464646;
@@ -123,11 +123,12 @@ body {
       height: 300px;
     }
   }
+  
   .center-btn {
     .btn-learn {
       width: 170px;
       margin-top: 60px;
-      padding: 0px 0px 0px 24px;
+      padding: 0 0 0 24px;
     }
     margin: 0 auto;
     width: 20%;
@@ -154,9 +155,10 @@ body {
     margin: auto;
     p {
       font-size: 20px;
-      padding: 30px 0px;
-      }
+      padding: 30px 0;
+    }
   }
+
   .tool-p-right {
     display: inline-block;
     height: 100px;
@@ -168,6 +170,7 @@ body {
       padding-top: 90px;
     }
   }
+
   .mission-p-right {
     display: inline-block;
     height: 100px;
@@ -189,6 +192,7 @@ body {
     margin-top: -70px;
   }
 }
+
 .section-2 {
   display: flex;
   border-bottom: 10px solid #F59331;
@@ -200,6 +204,7 @@ body {
     float: right;
     text-align: center;
   }
+
   .center-text {
     width: 100%;
     text-align: center;
@@ -210,6 +215,7 @@ body {
       margin: auto;
     }
   }
+
   .p-left {
     display: inline-block;
     height: 100px;
@@ -225,9 +231,9 @@ body {
   .btn-mission {
     width: 170px;
     margin-top: 30px;
-    padding: 0px 0px 0px 32px;
-
+    padding: 0 0 0 32px;
   }
+
   .btn-div {
     width: 100%;
     .btn-github {
@@ -235,6 +241,7 @@ body {
     } 
   }
 }
+
 .section-3 {
   display: flex;
   background: linear-gradient(292.39deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
@@ -261,6 +268,7 @@ body {
       padding-top: 100px;
     }
   }
+
   .p-right {
     display: inline-block;
     height: 100px;
@@ -277,16 +285,18 @@ body {
       margin-top: -7px;
     }
   }
+
   .center-text {
     width: 31%;
     text-align: center;
     margin: auto;
     font-size: 20px;
   }
+
   .btn-team {
     width: 170px;
     margin-top: 30px;
-    padding: 0px 0px 0px 40px;
+    padding: 0 0 0 40px;
   }
 }
 
@@ -305,12 +315,11 @@ body {
     text-align: center;
     margin: auto;
     font-size: 20px;
-    padding: 50px 0px 100px 0px;
+    padding: 50px 0 100px 0;
   }
 }
 
-
 *:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 3px $orange;
+    box-shadow: 0 0 0 3 $orange;
 }
