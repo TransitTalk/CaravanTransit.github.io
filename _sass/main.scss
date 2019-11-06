@@ -51,18 +51,20 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  ;
+  
   border-radius: 9px;
   margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
-.btn:hover { 
-    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+
+.btn:hover {
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .btn-primary {
   background-color: #464646;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .btn-secondary {
@@ -101,9 +103,9 @@ body {
 }
 
 .page-content {
-    @extend %content-width;
+  @extend %content-width;
 }
-  
+
 .section-1 {
   display: flex;
   background: linear-gradient(292.39deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
@@ -112,47 +114,56 @@ body {
   border-left: 10px solid #F59331;
   border-right: 10px solid #F59331;
   margin-bottom: 6px;
+
   .h1-left {
     display: inline-block;
     text-align: center;
-    width:40%;
+    width: 40%;
+
     h1 {
-      padding-top:80px;
+      padding-top: 80px;
     }
+
     img {
       height: 300px;
     }
   }
-  
+
   .center-btn {
     .btn-learn {
       width: 170px;
       margin-top: 60px;
       padding: 0 0 0 24px;
     }
+
     margin: 0 auto;
     width: 20%;
     text-align: center;
+
     .img-container {
       height: 130px;
       padding-top: 10px;
     }
   }
+
   .homepage-p-right {
     display: inline-block;
     height: 100px;
     width: 40%;
     float: right;
-    padding: 80px 0px;
+    padding: 80px 0;
+
     p {
       width: 70%;
       margin: auto;
     }
   }
+
   .homepage-p-center {
     display: inline-block;
     width: 60%;
     margin: auto;
+
     p {
       font-size: 20px;
       padding: 30px 0;
@@ -164,6 +175,7 @@ body {
     height: 100px;
     float: right;
     width: 50%;
+
     p {
       width: 60%;
       margin: auto;
@@ -176,6 +188,7 @@ body {
     height: 100px;
     float: right;
     width: 50%;
+
     p {
       width: 60%;
       margin: auto;
@@ -187,6 +200,7 @@ body {
 .three-buttons {
   border-top: 10px solid #493390;
   text-align: center;
+
   .features-img {
     height: 170px;
     margin-top: -70px;
@@ -198,6 +212,7 @@ body {
   border-bottom: 10px solid #F59331;
   margin-bottom: 6px;
   height: 240px;
+
   .h1-right {
     display: inline-block;
     width: 50%;
@@ -210,6 +225,7 @@ body {
     text-align: center;
     margin: auto;
     font-size: 20px;
+
     p {
       width: 70%;
       margin: auto;
@@ -221,6 +237,7 @@ body {
     height: 100px;
     float: left;
     width: 50%;
+
     p {
       width: 60%;
       margin: auto;
@@ -236,9 +253,10 @@ body {
 
   .btn-div {
     width: 100%;
+
     .btn-github {
       margin-top: 90px;
-    } 
+    }
   }
 }
 
@@ -251,17 +269,20 @@ body {
   border-right: 10px solid #F18DB9;
   margin-bottom: 6px;
   height: 300px;
+
   .h1-left {
     display: inline-block;
     width: 50%;
     padding-top: 60px;
     text-align: center;
   }
+
   .p-left {
     display: inline-block;
     height: 100px;
     float: left;
     width: 50%;
+
     p {
       width: 60%;
       margin: auto;
@@ -274,11 +295,13 @@ body {
     height: 100px;
     float: right;
     width: 50%;
+
     p {
       padding-top: 100px;
       width: 60%;
       margin: auto;
     }
+
     img {
       height: 320px;
       margin-left: 90px;
@@ -305,7 +328,8 @@ body {
   height: 260px;
   text-align: center;
   margin: auto;
-  p {    
+
+  p {
     width: 50%;
     margin: auto;
     padding-top: 30px;
@@ -320,6 +344,6 @@ body {
 }
 
 *:focus {
-    outline: none;
-    box-shadow: 0 0 0 3 $orange;
+  outline: none;
+  box-shadow: 0 0 0 3 $orange;
 }
