@@ -51,7 +51,6 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  
   border-radius: 9px;
   margin: 0 auto;
   margin-left: auto;
@@ -60,6 +59,7 @@ body {
 
 .btn:hover {
   box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #888;
 }
 
 .btn-primary {
@@ -71,8 +71,6 @@ body {
   color: #464646;
   border: 3px solid #464646;
 }
-
-.btn:hover { background-color: #888; }
 
 .logo-large { height: 130px; }
 .logo-med { height: 90px; }
@@ -100,10 +98,6 @@ body {
     line-height: 56px;
     text-align: center;
   }
-}
-
-.page-content {
-  @extend %content-width;
 }
 
 .section-1 {
@@ -341,9 +335,4 @@ body {
     font-size: 20px;
     padding: 50px 0 100px 0;
   }
-}
-
-*:focus {
-  outline: none;
-  box-shadow: 0 0 0 3 $orange;
 }

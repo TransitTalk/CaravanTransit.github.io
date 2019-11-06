@@ -4,7 +4,7 @@
   "description": "TransitTalk marketing site powered by Jekyll",
   "main": "index.js",
   "dependencies": {
-    "postcss": "^7.0.17"
+    "postcss": "^7.0.21"
   },
   "devDependencies": {
     "stylelint": "^10.1.0",
