@@ -1,20 +1,24 @@
-[class^="bkgd"] {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// [class^="bkgd"] {
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
 
 .bkgd-1 {
-  background-image: url(/assets/images/mobile-partition-left.png);
-
-  @media (min-width: $desktop-min-width) {
-    background-image: url(/assets/images/partition-left.png);
-  }
+  background: linear-gradient(292.39deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
+  border-top: 20px solid $yellow;
+  border-bottom: 20px solid $pink;
+  border-left: 20px solid $red;
+  border-right: 20px solid $green;
+  width: 70%;
+  margin: auto;
 }
 
 .bkgd-2 {
-  background-image: url(/assets/images/mobile-partition-right.png);
-
-  @media (min-width: $desktop-min-width) {
-    background-image: url(/assets/images/partition-right.png);
-  }
+  background: linear-gradient(57.07deg, #D1D1D1 0%, rgba(231, 231, 231, 0) 100%);
+  border-top: 20px solid $green;
+  border-bottom: 20px solid $brown;
+  border-left: 20px solid $blue;
+  border-right: 20px solid $purple;
+  width: 70%;
+  margin: auto;
 }
