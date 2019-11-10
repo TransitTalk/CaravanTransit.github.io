@@ -11,6 +11,7 @@
   border-right: 20px solid $green;
   width: 70%;
   margin: auto;
+  margin-bottom: 6px;
 }
 
 .bkgd-1b {
@@ -18,6 +19,7 @@
   border-bottom: 10px solid $orange;
   width: 73%;
   margin: auto;
+  margin-bottom: 6px;
 }
 
 .bkgd-2 {
@@ -27,5 +29,12 @@
   border-left: 20px solid $blue;
   border-right: 20px solid $purple;
   width: 70%;
+  margin: auto;
+  margin-bottom: 6px;
+}
+
+.bkgd-2b {
+  border-top: 10px solid #1BA4E3;
+  width: 73%;
   margin: auto;
 }
